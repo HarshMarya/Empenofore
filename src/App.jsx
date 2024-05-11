@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import fontFamily from './assets/Montserrat-VariableFont_wght.ttf'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import UncontrolledExample from './Components/Carousel'
-import BasicExample from './Components/Carousel'
+import React from "react";
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import Blogs from "./Pages/Blogs";
+import ContactUs from "./Pages/ContactUs";
+import Careers from "./Pages/Careers";
+import BigDataAnalytics from "./Services/BigDataAnalytics";
+import AgileTransformation from "./Services/AgileTransformation";
+import CloudIntergration from "./Services/CloudIntergration";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <div>
-      <nav className='flex justify-between items-center mx-4 p-4 bg-transparent'>
-        <a className='bg-blue-700 text-white p-2 text-3xl'><img src=''></img>Empenofore</a>
-        <div className=''>
-          <ul className='flex gap-10 items-center'>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
-            <button className='bg-amber-400 p-2 text-white'>Careers</button>
-          </ul>
-        </div>
-      </nav>
-      {/* <UncontrolledExample/> */}
-      <BasicExample/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about-us' element={<AboutUs/>}/>
+          <Route path='/blog' element={<Blogs/>}/>
+          <Route path='/contact-us' element={<ContactUs/>}/>
+          <Route path='/careers' element={<Careers/>}/>
+          <Route path='/bigdata&analytics' element={<BigDataAnalytics/>}/>
+          <Route path='/agiletransformation' element={<AgileTransformation/>}/>
+          <Route path='/cloud-integration' element={<CloudIntergration/>}/>
+      </Routes>
+    </BrowserRouter>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;

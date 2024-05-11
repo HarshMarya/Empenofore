@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderWidth:{
+        '7':'7px'
+      },
+      backgroundImage:{
+        "empBg":"url('src/Images/emp_banner.jpg')",
+      }
+    },
   },
   plugins: [],
 }
