@@ -7,6 +7,7 @@ import { GiTeamIdea } from "react-icons/gi";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";
 import { FaComputer } from "react-icons/fa6";
+import { MdOutlineArchitecture } from "react-icons/md";
 import leftImg from "../Images/left.png";
 import { Link } from "react-router-dom";
 
@@ -139,6 +140,20 @@ function Services() {
               </p>
             </div>
           </div>
+          <div className=" flex bg-[#F6F6F6] flex-col items-center p-4 max-w-sm mx-2 my-4 shadow-lg overflow-hidden">
+            <MdOutlineArchitecture className="text-7xl text-[#02427A] mx-4" />
+            <div className="mt-2">
+              <Link
+                to="/"
+                className="text-xl lg:text-2xl font-semibold hover:underline cursor-pointer text-center"
+              >
+                Platform architect
+              </Link>
+              <p className="text-sm lg:text-base my-4">
+              We gaze over your business needs, performance to recommend the cloud infrastructure that suits the best to your needs.
+              </p>
+            </div>
+          </div>
         </div>
 
         <section className="flex justify-around items-center lg:gap-10 flex-col lg:flex-row sm:gap-0 md:gap-10 p-4 lg:p-10 bg-[#F6F6F6]">
@@ -155,7 +170,7 @@ function Services() {
               experience in the following.
             </p>
             <button className="bg-[#E24077] p-2 text-white uppercase text-sm mt-10">
-              Read More
+            <Link to='/cloud-integration' >See more</Link>
             </button>
           </div>
         </section>

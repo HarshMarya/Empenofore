@@ -119,20 +119,13 @@ function TechStack() {
 
       </div>
       {/* Technology Stack end */}
-
+      
+      {/* our central values */}
       <section className="p-10 lg:p-20 bg-[#F6F6F6] container">
         <p className=" text-[#E24077] font-extrabold uppercase text-sm mx-4">our central values</p>
-        <div className="flex flex-col lg:flex-col xl:flex-row justify-around">
-          <div className="m-4">
-            <h3 className="text-3xl lg:text-5xl my-4 font-extrabold">Our Ethics</h3>
-            <p className="text-sm lg:text-base">
-              We walk on the path of openness& honesty in all forms of
-              communication, both internally and externally. We despise
-              discrimination against languages, complexion, gender, or religion.
-            </p>
-          </div>
+        <div className="container grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 items-center justify-center mx-auto">
 
-          <div className="m-4">
+          <div className="">
             <h3 className="text-3xl lg:text-5xl font-extrabold my-4">Knowledge Sharing</h3>
             <p className="text-sm lg:text-base">
               Our disciplined, repetitive, and self motivated efforts result in
@@ -141,7 +134,15 @@ function TechStack() {
             </p>
           </div>
 
-          <div className="m-4">
+          <div className="">
+            <h3 className="text-3xl lg:text-5xl font-extrabold my-4">Customer Authenticity</h3>
+            <p className="text-sm lg:text-base">
+              One of our mottos is to serve our customer's genuine interest and
+              authentic inputs with a mission to deliver tactile impact.
+            </p>
+          </div>
+
+          <div className="">
             <h3 className="text-3xl lg:text-5xl font-extrabold my-4">Quality First</h3>
             <p className="text-sm lg:text-base">
               We are a firm believer of consistency in quality without any
@@ -149,13 +150,16 @@ function TechStack() {
               five-star effort.
             </p>
           </div>
-          <div className="m-4">
-            <h3 className="text-3xl lg:text-5xl font-extrabold my-4">Customer Authenticity</h3>
+
+          <div className="">
+            <h3 className="text-3xl lg:text-5xl my-4 font-extrabold">Our Ethics</h3>
             <p className="text-sm lg:text-base">
-              One of our mottos is to serve our customer's genuine interest and
-              authentic inputs with a mission to deliver tactile impact.
+              We walk on the path of openness& honesty in all forms of
+              communication, both internally and externally. We despise
+              discrimination against languages, complexion, gender, or religion.
             </p>
           </div>
+
         </div>
       </section>
     </>

@@ -23,7 +23,7 @@ function Navbar() {
               <li><Link className="dropdown-item" to="/cloud-integration">Cloud-First</Link></li>
             </ul>
           </div>
-          <li className="my-4 py-2 hover:underline hover:rounded"><Link spy={true} smooth={true} to="/blog" >Blog</Link></li>
+          <li className="my-4 py-2 hover:underline hover:rounded"><Link spy={true} smooth={true} preventScrollReset={true} to="/blog" >Blog</Link></li>
           <li className="my-4 py-2 hover:underline hover:rounded"><Link spy={true} smooth={true} to="/contact-us" >Contact Us</Link></li>
           <li className="my-4 py-2 hover:underline hover:rounded"><Link spy={true} smooth={true} to="/careers" >Careers</Link></li>
           

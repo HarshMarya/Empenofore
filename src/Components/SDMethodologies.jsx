@@ -1,6 +1,7 @@
 import React from "react";
 import leftImg from "../Images/left.png";
 import banner5 from "../Images/4.png";
+import { Link } from "react-router-dom";
 
 function SDMethodologies() {
   return (
@@ -83,7 +84,7 @@ function SDMethodologies() {
           For business transformations empowered by digital technology, business domain experience is significant. Right business questions are asked by the experts in the domain to analyze and address. Our consultants inflame our digital excellence to build improved cloud solutions and leverage your domain expertise.
           </p>
           <button className="text-sm lg:text-base bg-[#E24077] p-3 text-white uppercase mt-10">
-            Read More
+          <Link to='/cloud-integration' >See more</Link>
           </button>
         </div>
         <div>
